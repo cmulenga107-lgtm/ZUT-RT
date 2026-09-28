@@ -1,421 +1,147 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="CAT ZUT Results Tracker (ZUT-RT) - proposed results publication and viewing system.">
-    <title>CAT ZUT Results Tracker | ZUT-RT</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZUT-RT ZAMBIA UNIVERSITY OF TECHNOLOGY</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- =========================================================
-         MEMBER 1 - PROJECT STRUCTURE & NAVIGATION
-         Jira: ZUTRT-01
-         Contribution: HTML document structure, header and navigation.
-         Git branch suggestion: ZUTRT-01-navigation
-         ========================================================= -->
-    <header class="site-header">
-        <nav class="navbar container">
-            <a href="#home" class="logo">
-                <span class="logo-mark">Z</span>
-                <span>ZUT-RT</span>
-            </a>
+<nav>
+  <div class="logo"><img src="logo.jpg" alt="Zambia University of Technology"></div>
+  <div class="links">
+    <a href="#home">Home</a>
+    <a href="#problem">Problem</a>
+    <a href="#solution">Solution</a>
+    <a href="#features">Features</a>
+    <a href="#team">Team</a>
+    <a href="#contact">Contact</a>
+    <a href="#benefits">Benefits</a>
+  </div>
+  <div></div>
+</nav>
 
-            <button class="menu-toggle" aria-label="Open navigation menu">☰</button>
+<!-- HERO - Background picture -->
+<section id="home">
+  <div class="hero-content">
+    <h1>ZAMBIA UNIVERSITY OF TECHNOLOGY<br>RESULTS TRACKER</h1>
+    <p>A modern platform that tracks examination results processing and notifies students instantly.</p>
+    <a href="#problem" class="enter-btn">project</a>
+  </div>
+</section>
 
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#problem">Problem</a></li>
-                <li><a href="#solution">Solution</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#benefits">Benefits</a></li>
-                <li><a href="#team">Team</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<!-- PROBLEM IDENTIFIED -->
+<section id="problem">
+  <h2>1. IDENTIFIED PROBLEM</h2>
+  <p>
+    > The problem occurs during the <strong>examination results-processing and release process at ZUT.</strong><br><br>
+    > Students, Lecturers, Examination officers and administrators are affected.<br>
+    > After examinations, Students may wait a long time while marks are submitted, verified, compiled and approved.<br><br>
+    <strong>The delay creates uncertainty and can affect academic planning, registration and personal arrangements.</strong>
+  </p>
+</section>
 
-    <main>
+<!-- SOLUTION -->
+<section id="solution">
+  <h2>2. PROPOSED SOFTWARE SOLUTION</h2>
+  <p><strong>System Name:</strong> ZAMBIA UNIVERSITY OF TECHNOLOGY RESULTS TRACKER (ZUT-RT).</p>
+  <p><strong>Users:</strong> Students, Lecturers, Examination officers and academic administrators.</p>
+  <p>The system improves communication by showing progress and notifying students when results are released.</p>
+</section>
 
-        <!-- =====================================================
-             MEMBER 2 - HERO / HOME
-             Jira: ZUTRT-02
-             Contribution: Main introduction and call-to-action.
-             Git branch suggestion: ZUTRT-02-home
-             ===================================================== -->
-        <section id="home" class="hero">
-            <div class="container hero-grid">
-                <div class="hero-content">
-                    <p class="eyebrow">CAT ZUT SOFTWARE ENGINEERING PROJECT</p>
-                    <h1>ZUT Results <span>Tracker</span></h1>
-                    <p class="hero-subtitle">ZUT-RT</p>
-                    <p class="hero-text">
-                        A proposed web-based platform for improving the publication,
-                        tracking and viewing of student results.
-                    </p>
-                    <div class="hero-actions">
-                        <a href="#solution" class="btn btn-primary">Explore ZUT-RT</a>
-                        <a href="#problem" class="btn btn-outline">The Problem</a>
-                    </div>
-                </div>
+<!-- FEATURES -->
+<section id="features">
+  <h2>3. WHAT ZUT-RT DOES</h2>
+  <div class="features-grid">
+    <div>
+      <h3>Live Tracking</h3>
+      <p>Green = done, Orange = in Progress, Grey = pending</p>
+    </div>
+    <div>
+      <h3>Instant Alert</h3>
+      <p>SMS and Email when results are out</p>
+    </div>
+    <div>
+      <h3>Student Dashboard</h3>
+      <p>View status and history in one place</p>
+    </div>
+    <div>
+      <h3>Secure Access</h3>
+      <p>Role-based login for students & staff</p>
+    </div>
+    <div>
+      <h3>Progress Reports</h3>
+      <p>Admins track department progress</p>
+    </div>
+  </div>
+</section>
 
-                <div class="hero-card">
-                    <div class="status-top">
-                        <span>RESULT STATUS</span>
-                        <span class="status-dot">●</span>
-                    </div>
-                    <h3>Semester Results</h3>
-                    <div class="progress-line">
-                        <span style="width: 100%;"></span>
-                    </div>
-                    <div class="status-steps">
-                        <span>Submitted</span>
-                        <span>Reviewed</span>
-                        <span>Approved</span>
-                        <span>Published</span>
-                    </div>
-                    <p class="published">✓ Results Published</p>
-                </div>
-            </div>
-        </section>
+<!-- BENEFITS -->
+<section id="benefits">
+  <h2>4. BENEFITS OF ZUT-RT</h2>
+  <div class="features-grid">
+    <div>
+      <h3>Clear Progress Updates</h3>
+      <p>Students can see whether results are pending, being processed, or released, reducing uncertainty while they wait.</p>
+    </div>
+    <div>
+      <h3>Fewer Status Inquiries</h3>
+      <p>Visible progress can reduce repeated requests to lecturers and examination staff for updates.</p>
+    </div>
+    <div>
+      <h3>Timely Notifications</h3>
+      <p>Students can be notified when results are released instead of checking the system repeatedly.</p>
+    </div>
+    <div>
+      <h3>Better Academic Planning</h3>
+      <p>Knowing the results status helps students plan registration and their next academic steps.</p>
+    </div>
+    <div>
+      <h3>Easier Staff Follow-up</h3>
+      <p>Progress reports help administrators identify processing stages or departments that need attention.</p>
+    </div>
+  </div>
+</section>
 
-        <!-- =====================================================
-             MEMBER 3 - PROBLEM
-             Jira: ZUTRT-03
-             Contribution: Identified school problem and stakeholders.
-             Git branch suggestion: ZUTRT-03-problem
-             ===================================================== -->
-        <section id="problem" class="section">
-            <div class="container">
-                <div class="section-heading">
-                    <p class="eyebrow">01 — THE PROBLEM</p>
-                    <h2>Making the results process easier to understand.</h2>
-                    <p>
-                        Students may experience delays and uncertainty when accessing
-                        examination results because results pass through different
-                        processing stages before publication.
-                    </p>
-                </div>
+<!-- TEAM - 10 Members with photos + GitHub -->
+<section id="team">
+  <h2>5. SOFTWARE CHANGE</h2>
+  <h3>TEAM MEMBERS</h3>
+  <div class="team-grid">
+    <div><img src="images/alfred.jpg" alt="Alfred"><h3>Alfred Chalwe</h3><p>2511350</p><a href="https://github.com/" target="_blank">GitHub</a></div>
+    <div><img src="images/chewe.jpg" alt="Chewe"><h3>Chewe Mulenga</h3><p>2511579</p><a href="https://github.com/" target="_blank">GitHub</a></div>
+    <div><img src="images/ephraim.jpg" alt="Ephraim"><h3>Ephraim Chilombo</h3><p>2511352</p><a href="https://github.com/" target="_blank">GitHub</a></div>
+    <div><img src="images/tina.jpg" alt="Tina"><h3>Tina Mukupa</h3><p>2511001</p><a href="https://github.com/" target="_blank">GitHub</a></div>
+    <div><img src="images/mwinga.jpg" alt="Mwinga"><h3>Mwinga Kanyama</h3><p>2511672</p><a href="https://github.com/" target="_blank">GitHub</a></div>
+    <div><img src="images/mwangala.jpg" alt="Mwangala"><h3>Mwangala Tizza</h3><p>2511183</p><a href="https://github.com/" target="_blank">GitHub</a></div>
+    <div><img src="images/suwilo.jpg" alt="Suwilo"><h3>Suwilo Kamavu</h3><p>2510226</p><a href="https://github.com/" target="_blank">GitHub</a></div>
+    <div><img src="images/olias.jpg" alt="Olias"><h3>Olias Chimanda</h3><p>2510315</p><a href="https://github.com/" target="_blank">GitHub</a></div>
+    <div><img src="images/moses.jpg" alt="Moses"><h3>Moses Sampa</h3><p>2511276</p><a href="https://github.com/" target="_blank">GitHub</a></div>
+    <div><img src="images/choolwe.jpg" alt="Choolwe"><h3>Choolwe Chali</h3><p>2511049</p><a href="https://github.com/" target="_blank">GitHub</a></div>
+  </div>
+</section>
 
-                <div class="problem-grid">
-                    <article class="info-card">
-                        <div class="icon">⏳</div>
-                        <h3>Waiting & Uncertainty</h3>
-                        <p>
-                            Students may not know whether their results have been
-                            submitted, processed, approved or published.
-                        </p>
-                    </article>
-
-                    <article class="info-card">
-                        <div class="icon">🔎</div>
-                        <h3>Limited Visibility</h3>
-                        <p>
-                            Without a centralized tracking point, it can be difficult
-                            to know the current stage of the results process.
-                        </p>
-                    </article>
-
-                    <article class="info-card">
-                        <div class="icon">🏢</div>
-                        <h3>Unnecessary Enquiries</h3>
-                        <p>
-                            Students may need to make repeated enquiries when they
-                            simply want to know whether results are available.
-                        </p>
-                    </article>
-                </div>
-
-                <div class="stakeholders">
-                    <h3>Who is affected?</h3>
-                    <div class="stakeholder-list">
-                        <span>Students</span>
-                        <span>Lecturers</span>
-                        <span>Departments</span>
-                        <span>Results/Exams Staff</span>
-                        <span>Administrators</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- =====================================================
-             MEMBER 4 - PROPOSED SOLUTION
-             Jira: ZUTRT-04
-             Contribution: System purpose, users and workflow.
-             Git branch suggestion: ZUTRT-04-solution
-             ===================================================== -->
-        <section id="solution" class="section section-dark">
-            <div class="container">
-                <div class="section-heading light">
-                    <p class="eyebrow">02 — OUR SOLUTION</p>
-                    <h2>Introducing CAT ZUT Results Tracker.</h2>
-                    <p>
-                        ZUT-RT is a proposed centralized platform where authorized
-                        staff can manage results while students can conveniently
-                        view results that have been published.
-                    </p>
-                </div>
-
-                <div class="workflow">
-                    <div class="workflow-step">
-                        <span>01</span>
-                        <h3>Submit</h3>
-                        <p>Authorized staff submit results.</p>
-                    </div>
-                    <div class="workflow-arrow">→</div>
-                    <div class="workflow-step">
-                        <span>02</span>
-                        <h3>Review</h3>
-                        <p>Results are checked through the defined process.</p>
-                    </div>
-                    <div class="workflow-arrow">→</div>
-                    <div class="workflow-step">
-                        <span>03</span>
-                        <h3>Approve</h3>
-                        <p>Authorized personnel approve results.</p>
-                    </div>
-                    <div class="workflow-arrow">→</div>
-                    <div class="workflow-step">
-                        <span>04</span>
-                        <h3>Publish</h3>
-                        <p>Approved results are made available.</p>
-                    </div>
-                    <div class="workflow-arrow">→</div>
-                    <div class="workflow-step">
-                        <span>05</span>
-                        <h3>View</h3>
-                        <p>Students access their published results.</p>
-                    </div>
-                </div>
-
-                <div class="user-roles">
-                    <h3>Intended users</h3>
-                    <div class="role-grid">
-                        <div><strong>Students</strong><span>View published results</span></div>
-                        <div><strong>Lecturers</strong><span>Submit results</span></div>
-                        <div><strong>Departments</strong><span>Review and monitor</span></div>
-                        <div><strong>Results Officers</strong><span>Manage and publish</span></div>
-                        <div><strong>Administrators</strong><span>Manage users and access</span></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- =====================================================
-             MEMBER 5 - FEATURES
-             Jira: ZUTRT-05
-             Contribution: Main system feature cards.
-             Git branch suggestion: ZUTRT-05-features
-             ===================================================== -->
-        <section id="features" class="section">
-            <div class="container">
-                <div class="section-heading">
-                    <p class="eyebrow">03 — KEY FEATURES</p>
-                    <h2>Designed around the results journey.</h2>
-                    <p>
-                        The proposed platform focuses on clear access, organized
-                        processing and visibility of results publication.
-                    </p>
-                </div>
-
-                <div class="feature-grid">
-                    <article class="feature-card">
-                        <div class="icon">🔐</div>
-                        <h3>Secure Login</h3>
-                        <p>Role-based access for students and authorized staff.</p>
-                    </article>
-                    <article class="feature-card">
-                        <div class="icon">📤</div>
-                        <h3>Results Submission</h3>
-                        <p>Authorized staff can submit results through a structured process.</p>
-                    </article>
-                    <article class="feature-card">
-                        <div class="icon">🔎</div>
-                        <h3>Results Tracking</h3>
-                        <p>Track stages such as submitted, reviewed, approved and published.</p>
-                    </article>
-                    <article class="feature-card">
-                        <div class="icon">📢</div>
-                        <h3>Publication</h3>
-                        <p>Approved results can be published for student access.</p>
-                    </article>
-                    <article class="feature-card">
-                        <div class="icon">📊</div>
-                        <h3>Results Viewing</h3>
-                        <p>Students can view results that have been published to them.</p>
-                    </article>
-                    <article class="feature-card">
-                        <div class="icon">🔔</div>
-                        <h3>Notifications</h3>
-                        <p>Students can be informed when results become available.</p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- =====================================================
-             MEMBER 6 - BENEFITS & OBJECTIVES
-             Jira: ZUTRT-06
-             Contribution: Objectives and expected benefits.
-             Git branch suggestion: ZUTRT-06-benefits
-             ===================================================== -->
-        <section id="benefits" class="section section-soft">
-            <div class="container">
-                <div class="section-heading">
-                    <p class="eyebrow">04 — BENEFITS</p>
-                    <h2>What ZUT-RT aims to improve.</h2>
-                </div>
-
-                <div class="benefit-layout">
-                    <div class="objectives">
-                        <h3>Our objectives</h3>
-                        <ol>
-                            <li>Provide convenient access to published student results.</li>
-                            <li>Provide authorized staff with a centralized results platform.</li>
-                            <li>Improve visibility of the results publication process.</li>
-                            <li>Reduce unnecessary enquiries about result availability.</li>
-                            <li>Provide a structured results submission and publication process.</li>
-                            <li>Improve communication between results administrators and students.</li>
-                        </ol>
-                    </div>
-
-                    <div class="benefit-cards">
-                        <article>
-                            <span class="benefit-number">01</span>
-                            <h3>For Students</h3>
-                            <p>Convenient access, clearer status information and less uncertainty.</p>
-                        </article>
-                        <article>
-                            <span class="benefit-number">02</span>
-                            <h3>For Staff</h3>
-                            <p>Structured submission, monitoring and management of results.</p>
-                        </article>
-                        <article>
-                            <span class="benefit-number">03</span>
-                            <h3>For the Institution</h3>
-                            <p>A more organized approach to results publication and communication.</p>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- =====================================================
-             MEMBER 7 - TEAM
-             Jira: ZUTRT-07
-             Contribution: Team member cards and GitHub links.
-             Git branch suggestion: ZUTRT-07-team
-             IMPORTANT: Replace all names/usernames before submission.
-             ===================================================== -->
-        <section id="team" class="section">
-            <div class="container">
-                <div class="section-heading">
-                    <p class="eyebrow">05 — OUR TEAM</p>
-                    <h2>The people behind ZUT-RT.</h2>
-                    <p>
-                        Ten team members contributing to the design and development
-                        of the ZUT-RT landing page.
-                    </p>
-                </div>
-
-                <div class="team-grid">
-                    <article class="team-card"><span class="member-no">01</span><h3>Member 01</h3><p>Navigation & Project Structure</p><a href="#" target="_blank">GitHub Profile ↗</a></article>
-                    <article class="team-card"><span class="member-no">02</span><h3>Member 02</h3><p>Home / Hero Section</p><a href="#" target="_blank">GitHub Profile ↗</a></article>
-                    <article class="team-card"><span class="member-no">03</span><h3>Member 03</h3><p>Problem Section</p><a href="#" target="_blank">GitHub Profile ↗</a></article>
-                    <article class="team-card"><span class="member-no">04</span><h3>Member 04</h3><p>Proposed Solution</p><a href="#" target="_blank">GitHub Profile ↗</a></article>
-                    <article class="team-card"><span class="member-no">05</span><h3>Member 05</h3><p>Features Section</p><a href="#" target="_blank">GitHub Profile ↗</a></article>
-                    <article class="team-card"><span class="member-no">06</span><h3>Member 06</h3><p>Benefits & Objectives</p><a href="#" target="_blank">GitHub Profile ↗</a></article>
-                    <article class="team-card"><span class="member-no">07</span><h3>Member 07</h3><p>Team Section</p><a href="#" target="_blank">GitHub Profile ↗</a></article>
-                    <article class="team-card"><span class="member-no">08</span><h3>Member 08</h3><p>Contact & Footer</p><a href="#" target="_blank">GitHub Profile ↗</a></article>
-                    <article class="team-card"><span class="member-no">09</span><h3>Member 09</h3><p>Responsive Design & UI</p><a href="#" target="_blank">GitHub Profile ↗</a></article>
-                    <article class="team-card"><span class="member-no">10</span><h3>Member 10</h3><p>Testing & Accessibility</p><a href="#" target="_blank">GitHub Profile ↗</a></article>
-                </div>
-            </div>
-        </section>
-
-        <!-- =====================================================
-             MEMBER 8 - CONTACT & FOOTER
-             Jira: ZUTRT-08
-             Contribution: Contact section, footer and useful links.
-             Git branch suggestion: ZUTRT-08-contact
-             Replace email address with your team's real address.
-             ===================================================== -->
-        <section id="contact" class="contact-section">
-            <div class="container contact-grid">
-                <div>
-                    <p class="eyebrow">06 — CONTACT</p>
-                    <h2>Questions about ZUT-RT?</h2>
-                    <p>
-                        Contact the CAT ZUT Results Tracker team for enquiries
-                        about our proposed system.
-                    </p>
-                </div>
-                <a class="btn btn-light" href="mailto:yourteam@example.com">Email Our Team</a>
-            </div>
-        </section>
-
-        <!-- =====================================================
-             MEMBER 9 - RESPONSIVE UI / ACCESSIBILITY
-             Jira: ZUTRT-09
-             Contribution: Improve visual consistency, responsive layout,
-             keyboard focus, spacing, contrast and mobile experience.
-             Git branch suggestion: ZUTRT-09-responsive-ui
-             ===================================================== -->
-        <section class="quality-note">
-            <div class="container">
-                <strong>Built for public presentation.</strong>
-                <span>Responsive layout • Clear navigation • Accessible structure • Mobile friendly</span>
-            </div>
-        </section>
-
-    </main>
-
-    <!-- =========================================================
-         MEMBER 10 - TESTING, QA & FINAL POLISH
-         Jira: ZUTRT-10
-         Contribution: Cross-browser testing, link testing, HTML validation,
-         final content checks, bug fixes and deployment-readiness review.
-         Git branch suggestion: ZUTRT-10-testing
-         ========================================================= -->
-    <footer class="site-footer">
-        <div class="container footer-grid">
-            <div>
-                <a href="#home" class="logo footer-logo">
-                    <span class="logo-mark">Z</span>
-                    <span>ZUT-RT</span>
-                </a>
-                <p>CAT ZUT Results Tracker</p>
-                <p class="copyright">© 2026 ZUT-RT Team. Academic project.</p>
-            </div>
-
-            <div class="footer-links">
-                <a href="#home">Home</a>
-                <a href="#problem">Problem</a>
-                <a href="#solution">Solution</a>
-                <a href="#features">Features</a>
-                <a href="#team">Team</a>
-                <a href="#contact">Contact</a>
-            </div>
-        </div>
-    </footer>
-
-    <script>
-        // Optional small navigation enhancement.
-        // Member 1 / Member 10 can review this during final testing.
-        const menuToggle = document.querySelector('.menu-toggle');
-        const navLinks = document.querySelector('.nav-links');
-
-        menuToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('show');
-        });
-
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                navLinks.classList.remove('show');
-            });
-        });
-    </script>
+<!-- CONTACT SECTION - as per your drawing -->
+<section id="contact">
+  <div class="contact-left">
+    <h2>Contact us</h2>
+    <p><strong>Contact info</strong><br>Zambia University of Technology<br>Email: info@softwarechange.com<br>Phone: +260 966 383 325</p>
+  </div>
+  <div class="contact-right">
+    <form>
+      <input type="text" placeholder="First name">
+      <input type="text" placeholder="Second name">
+      <input type="email" placeholder="Email">
+      <textarea placeholder="Message"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</section>
+<footer>
+  <img class="footer-logo" src="logo.jpg" alt="Zambia University of Technology">
+  <p>All rights reserved ZUT-RT © 2026 | Zambia University of Technology</p>
+  <p><strong>Created by: </strong>Software Change</p>
+</footer>
 </body>
 </html>
