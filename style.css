@@ -2,15 +2,18 @@
     padding:0; 
     box-sizing:border-box; 
 }
+
 body { 
     font-family: Segoe UI, Arial, sans-serif;
 
 }
+
 section { 
     width:100%; 
     display:block; 
     padding:80px 60px; 
 }
+
 html { 
     scroll-behavior:smooth; 
 }
@@ -28,14 +31,17 @@ nav {
   padding:15px 40px; 
   z-index:1000;
 }
+
 nav:hover { 
     background:rgb(233, 132, 8); 
     color:rgb(252, 234, 234);
 }
+
 .logo {
     display:flex;
     align-items:center;
 }
+
 .logo img {
     display:block;
     width:auto;
@@ -43,6 +49,7 @@ nav:hover {
     max-width:160px;
     object-fit:contain;
 }
+
 .links a { 
     color:white; 
     text-decoration:none; 
@@ -96,10 +103,7 @@ nav:hover {
     box-shadow:0 6px 14px rgba(0,0,0,.25);
 }
 
-#problem { 
-    background:rgb(161, 161, 233);
- }
- h5 { color:#ff6f00; 
+ h5 { color: #ff6f00; 
     letter-spacing:2px; 
 }
 h2 {
@@ -107,17 +111,23 @@ h2 {
      font-size:30px; 
      margin:10px 0 20px 0;
  }
+
+ #problem { 
+    background: rgb(161, 161, 233);
+ }
+
 #problem p { 
     background:#09389e; 
     border-left:4px solid #ff6f00;
      padding:20px; 
      border-radius:8px;
      color:white;
-     font-size:30px;
+     font-size:18px;
  }
-#problem p:hover { 
-    background:#3004f3; 
-    color:white;
+
+ #problem h2 {
+    font-size:25px;
+    color: #09389e;
  }
 
 #solution {
