@@ -4,12 +4,12 @@
 Zambia University of Technology Results Tracker (ZUT-RT) is a proposed web-based platform designed for improving the publication, tracking and viewing of student results. Currently, students face delays, lack of transparency, and difficulty accessing results. ZUT-RT proposes a centralized, secure, and user-friendly system where they can view thier results in real time, track academic progress and recieve notifications, while lecturers and administrators can efficiently manage and publish the results
 
 ## Assignment Scope
-This repository contains the public landing page required for the BSE2201 Software Engineering Foundations group assignment. The assignment requires the landing page only; implementation of the proposed results system is not required.
+This repository contains the public landing page required. This projet is limited to the design and development of the marketing/informational landing page that introduces the proposed ZUT-RT system, its features, benefits and tean. note:(the actual implimentation is a frontend only). This landing page demonstrates our understanding of requirements gathering, UN/UX design, and front-end development using HTML5 and CSS3. We did not include the javascript because it was optional.
 
 ## Technologies
 - HTML5
 - CSS3
-  
+- GIT AND GITHUB- version control and collaboration
 
 ## Team Contributions
 1. ZUTRT-01 - Navigation and project structure
@@ -22,3 +22,4 @@ This repository contains the public landing page required for the BSE2201 Softwa
 8. ZUTRT-08 - Contact and footer
 9. ZUTRT-09 - Responsive UI and accessibility
 10. ZUTRT-10 - Testing, QA and final polish
+ all team members are urged to participate
