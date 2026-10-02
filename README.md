@@ -10,7 +10,7 @@ This landing page demonstrates our understanding of requirements gathering, UN/U
 ## Technologies
 - HTML5
 - CSS3
-
+- GIT AND GITHUB- version control and collaboration
 ## Team Contributions
 1. ZUTRT-01 - Navigation and project structure
 2. ZUTRT-02 - Home/Hero section
