@@ -134,10 +134,8 @@ h2 {
 #solution {
      background:#b4bdf0;
  }
-#solution:hover { 
-    background:#a1a8f3; 
-    color:rgb(10, 0, 0);
- }
+
+ 
  #solution p { 
     background:#05125a; 
     border-left:4px solid #ff6f00; 
