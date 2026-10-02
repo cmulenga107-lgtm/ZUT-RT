@@ -1,4 +1,3 @@
-/* Change color: Tina */
 * { margin:0; 
     padding:0; 
     box-sizing:border-box; 
@@ -24,7 +23,7 @@ nav {
   top:0;
   left:0; 
   width:100%;
-  background:rgb(243, 147, 29);
+
   color:white;
   display:flex; 
   justify-content:space-between; 
@@ -34,7 +33,6 @@ nav {
 }
 
 nav:hover { 
-    background:rgb(233, 132, 8); 
     color:rgb(252, 234, 234);
 }
 
@@ -59,7 +57,7 @@ nav:hover {
 }
 
 .links a:hover { 
-    color:rgb(119, 0, 255);
+    color:rgb(231, 225, 238);
      transform:translateY(-5px);
      box-shadow:5px 6px 24px white;
  }
@@ -84,7 +82,7 @@ nav:hover {
      font-size:20px; }
 .enter-btn {
   display:inline-block; 
-  background:#ff6f00; 
+  background:#ea9350; 
   color:white;
   padding:12px 30px; 
   border-radius:5px; 
@@ -94,7 +92,7 @@ nav:hover {
     cursor:pointer;
 }
 .enter-btn:hover {
-    background:#051ad6;
+    background:#e6883c;
     transform:translateY(-2px);
     box-shadow:10px 6px 14px rgba(245, 242, 242, 0.25);
 }
@@ -134,8 +132,10 @@ h2 {
 #solution {
      background:#b4bdf0;
  }
-
- 
+#solution:hover { 
+    background:#a1a8f3; 
+    color:rgb(10, 0, 0);
+ }
  #solution p { 
     background:#05125a; 
     border-left:4px solid #ff6f00; 
@@ -144,39 +144,155 @@ h2 {
     color:white;
      font-size:20px;
  }
-#features { 
-    background:rgb(176, 198, 243); 
+:root {
+  --blue: #1d3f9e;
+  --blue-dark: #142c73;
+  --ink: #16203a;
+  --muted: #55617a;
+  --line: #dde3ef;
+  --bg: #f4f6fb;
+  --card: #ffffff;
+  --done: #1f9d5b;
+  --progress: #e8871e;
+  --pending: #8a94a6;
+  --radius: 16px;
 }
-#benefits {
-    background:rgb(176, 198, 243);
-    
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.6;
 }
-.features-grid { 
-    display:grid; 
-    grid-template-columns:repeat(3,1fr); 
-    gap:20px; 
-    margin-top:20px;
-    
- }
-.features-grid div { 
-    background:#05125a; 
-    border:1px solid #ddd; 
-    padding:25px; 
-    border-radius:12px;
-      border-left:4px solid #ff6f00;
+
+/* Navigation */
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--blue);
+  color: #fff;
 }
-.features-grid h3 {
-     color:white;
-      margin-bottom:8px;
- }
-.features-grid div p{
-    color: white;
-    font-size:20px;
+.nav-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
 }
-.features-grid div:hover { 
-    background:#1a237e; 
-    color:white;
- }
+.logo {
+  font-weight: 800;
+  font-size: 1.15rem;
+  letter-spacing: .02em;
+  color: #fff;
+  text-decoration: none;
+  padding: 6px 14px;
+  border: 2px solid rgba(255,255,255,.85);
+  border-radius: 8px;
+}
+.nav ul { display: flex; gap: 6px; list-style: none; }
+.nav a.link {
+  color: rgba(255,255,255,.85);
+  text-decoration: none;
+  font-size: .95rem;
+  font-weight: 500;
+  padding: 8px 14px;
+  border-radius: 8px;
+}
+.nav a.link:hover { background: rgba(255,255,255,.12); color: #fff; }
+.nav a.active { background: #fff; color: var(--blue); font-weight: 600; }
+a:focus-visible { outline: 3px solid #ffb95e; outline-offset: 2px; }
+
+/* Section */
+.features { max-width: 1100px; margin: 0 auto; padding: 88px 24px 104px; }
+.features h2 {
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -.02em;
+  color: var(--blue-dark);
+  max-width: 16ch;
+}
+.features .lead {
+  margin-top: 16px;
+  max-width: 52ch;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.grid {
+  margin-top: 48px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 28px;
+}
+.icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: #e8eefc;
+  color: var(--blue);
+  display: grid;
+  place-items: center;
+  margin-bottom: 18px;
+}
+.icon svg { width: 22px; height: 22px; }
+.card h3 { font-size: 1.15rem; font-weight: 700; margin-bottom: 6px; }
+.card p { color: var(--muted); font-size: .98rem; }
+
+/* Featured card */
+.card.feature-main {
+  grid-column: span 2;
+  background: var(--blue-dark);
+  border-color: var(--blue-dark);
+  color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  align-items: center;
+}
+.feature-main .icon { background: rgba(255,255,255,.14); color: #fff; }
+.feature-main p { color: rgba(255,255,255,.78); }
+
+.status-list { display: grid; gap: 10px; }
+.status {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(255,255,255,.09);
+  border-radius: 12px;
+  padding: 12px 14px;
+  font-weight: 600;
+  font-size: .95rem;
+}
+.dot { width: 12px; height: 12px; border-radius: 50%; flex: none; }
+.status small { margin-left: auto; font-weight: 500; opacity: .75; }
+.done .dot { background: var(--done); box-shadow: 0 0 0 4px rgba(31,157,91,.28); }
+.progress .dot { background: var(--progress); box-shadow: 0 0 0 4px rgba(232,135,30,.28); }
+.pending .dot { background: var(--pending); box-shadow: 0 0 0 4px rgba(138,148,166,.28); }
+
+/* Responsive */
+@media (max-width: 900px) {
+  .grid { grid-template-columns: repeat(2, 1fr); }
+  .card.feature-main { grid-column: span 2; }
+}
+@media (max-width: 640px) {
+  .nav ul { display: none; }
+  .features { padding: 56px 20px 72px; }
+  .grid { grid-template-columns: 1fr; }
+  .card.feature-main { grid-column: auto; grid-template-columns: 1fr; }
+}
 #team { 
     background:#adbcee; 
 }
@@ -312,3 +428,58 @@ footer .footer-logo {
         font-size:32px;
     }
 }
+<section class="features" id="features">
+  <h2>3. What ZUT-RT does</h2>
+  <p class="lead">Track every result from submission to release, and get told the moment yours is ready.</p>
+
+  <div class="grid">
+
+    <article class="card feature-main">
+      <div>
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg>
+        </div>
+        <h3>Live tracking</h3>
+        <p>See the state of every result at a glance, using three simple colours.</p>
+      </div>
+      <div class="status-list" aria-label="Status colour guide">
+        <div class="status done"><span class="dot"></span>Done <small>Green</small></div>
+        <div class="status progress"><span class="dot"></span>In progress <small>Orange</small></div>
+        <div class="status pending"><span class="dot"></span>Pending <small>Grey</small></div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg>
+      </div>
+      <h3>Instant alert</h3>
+      <p>Get an SMS and an email as soon as your results are out.</p>
+    </article>
+
+    <article class="card">
+      <div class="icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/></svg>
+      </div>
+      <h3>Student dashboard</h3>
+      <p>View your status and history in one place.</p>
+    </article>
+
+    <article class="card">
+      <div class="icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
+      </div>
+      <h3>Secure access</h3>
+      <p>Role-based login keeps students and staff to what they need.</p>
+    </article>
+
+    <article class="card">
+      <div class="icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>
+      </div>
+      <h3>Progress reports</h3>
+      <p>Admins track each department's progress.</p>
+    </article>
+
+  </div>
+</section>
