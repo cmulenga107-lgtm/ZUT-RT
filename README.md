@@ -23,3 +23,4 @@ This landing page demonstrates our understanding of requirements gathering, UN/U
 8. ZUTRT-08 - Contact and footer
 9. ZUTRT-09 - Responsive UI and accessibility
 10. ZUTRT-10 - Testing, QA and final polish
+all team members are urged to participate
