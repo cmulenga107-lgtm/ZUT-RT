@@ -2,6 +2,312 @@
     padding:0; 
     box-sizing:border-box; 
 }
+body { 
+    font-family: Segoe UI, Arial, sans-serif;
+
+}
+section { 
+    width:100%; 
+    display:block; 
+    padding:80px 60px; 
+}
+html { 
+    scroll-behavior:smooth; 
+}
+
+nav {
+  position:fixed; 
+  top:0;
+  left:0; 
+  width:100%;
+  background:rgb(243, 147, 29);
+  color:white;
+  display:flex; 
+  justify-content:space-between; 
+  align-items:center;
+  padding:15px 40px; 
+  z-index:1000;
+}
+nav:hover { 
+    background:rgb(233, 132, 8); 
+    color:rgb(252, 234, 234);
+}
+.logo {
+    display:flex;
+    align-items:center;
+}
+.logo img {
+    display:block;
+    width:auto;
+    height:44px;
+    max-width:160px;
+    object-fit:contain;
+}
+.links a { 
+    color:white; 
+    text-decoration:none; 
+    margin-left:20px; 
+    font-size:30px; 
+}
+
+.links a:hover { 
+    color:rgb(119, 0, 255);
+     transform:translateY(-5px);
+     box-shadow:5px 6px 24px white;
+ }
+
+/* HERO with background */
+#home {
+  background: linear-gradient(rgba(10,10,35,0.7), rgba(10,10,35,0.7)), url('hero.webp');
+  background-size:cover; 
+  background-position:center;
+  color:rgb(255, 254, 254); 
+  min-height:100vh;
+   padding-top:180px;
+}
+
+.hero-content h1 { 
+    font-size:50px; 
+    line-height:1.2; 
+}
+.hero-content p { 
+    margin:20px 0;
+     max-width:600px; 
+     font-size:20px; }
+.enter-btn {
+  display:inline-block; 
+  background:#ff6f00; 
+  color:white;
+  padding:12px 30px; 
+  border-radius:5px; 
+  text-decoration:none; 
+  margin-top:15px;
+    transition:background-color .2s ease, transform .2s ease, box-shadow .2s ease;
+    cursor:pointer;
+}
+.enter-btn:hover {
+    background:#051ad6;
+    transform:translateY(-2px);
+    box-shadow:10px 6px 14px rgba(245, 242, 242, 0.25);
+}
+.enter-btn:focus-visible {
+    background:#e65f00;
+    transform:translateY(-2px);
+    box-shadow:0 6px 14px rgba(0,0,0,.25);
+}
+
+#problem { 
+    background:rgb(161, 161, 233);
+ }
+ h5 { color:#ff6f00; 
+    letter-spacing:2px; 
+}
+h2 {
+     color:#1a237e; 
+     font-size:30px; 
+     margin:10px 0 20px 0;
+ }
+#problem p { 
+    background:#09389e; 
+    border-left:4px solid #ff6f00;
+     padding:20px; 
+     border-radius:8px;
+     color:white;
+     font-size:30px;
+ }
+#problem p:hover { 
+    background:#3004f3; 
+    color:white;
+ }
+
+#solution {
+     background:#b4bdf0;
+ }
+#solution:hover { 
+    background:#a1a8f3; 
+    color:rgb(10, 0, 0);
+ }
+ #solution p { 
+    background:#05125a; 
+    border-left:4px solid #ff6f00; 
+    padding:20px; 
+    border-radius:8px; 
+    color:white;
+     font-size:20px;
+ }
+#features { 
+    background:rgb(176, 198, 243); 
+}
+#benefits {
+    background:rgb(176, 198, 243);
+    
+}
+.features-grid { 
+    display:grid; 
+    grid-template-columns:repeat(3,1fr); 
+    gap:20px; 
+    margin-top:20px;
+    
+ }
+.features-grid div { 
+    background:#05125a; 
+    border:1px solid #ddd; 
+    padding:25px; 
+    border-radius:12px;
+      border-left:4px solid #ff6f00;
+}
+.features-grid h3 {
+     color:white;
+      margin-bottom:8px;
+ }
+.features-grid div p{
+    color: white;
+    font-size:20px;
+}
+.features-grid div:hover { 
+    background:#1a237e; 
+    color:white;
+ }
+#team { 
+    background:#adbcee; 
+}
+.team-grid { 
+    display:grid;
+     grid-template-columns:repeat(5,1fr); 
+     gap:15px; 
+     margin-top:50px; 
+     
+}
+.team-grid div { 
+    background:white; 
+    padding:20px; 
+    border-radius:12px; 
+    text-align:center; 
+    border:1px solid #ddd;
+      border-left:4px solid #ff6f00;
+ }
+.team-grid img { 
+    width:80px; 
+    height:80px;
+     border-radius:50%; 
+     object-fit:cover; 
+     border:3px solid #1a237e; 
+}
+.team-grid h3 { 
+    font-size:14px; 
+    margin:8px 0; 
+    color:#1a237e;
+ }
+.team-grid a { 
+    background:#1a237e; 
+    color:white; 
+    padding:5px 12px; 
+    border-radius:20px; 
+    text-decoration:none; 
+    font-size:12px; 
+}
+.team-grid div:hover { 
+    background:#bd5b10; 
+    color:rgb(10, 1, 48);
+    scroll-behavior: smooth;
+}
+.team-grid img:hover { 
+    transform:scale(1.1); 
+    transition:transform .3s ease; 
+}
+
+/* CONTACT - First name Second name Email Message Send */
+#contact { 
+    background:#101035; 
+    color:white; 
+    display:grid; 
+    grid-template-columns:1fr 1fr; 
+    gap:40px; 
+}
+#contact:hover { 
+    background:#02072c; 
+    color:white; 
+}
+#contact h2 { 
+    color:white; 
+}
+.contact-right input, .contact-right textarea {
+  width:100%; 
+  padding:12px; 
+  margin-bottom:12px; 
+  border-radius:6px; 
+  border:none;
+}
+.contact-right input:hover { 
+    background:#b1b5f0; 
+    color:white; 
+}
+.contact-right textarea {
+     height:200px; 
+}
+.contact-right textarea:hover { 
+    background:#b1b5f0; 
+    color:white; 
+}
+.contact-right button {
+     background:#ff6f00; 
+     color:rgb(228, 223, 218); 
+     padding:10px 25px; 
+     border:none; 
+     border-radius:6px; 
+     cursor:pointer; 
+     width:100px; 
+     float:right; 
+     font-size:20px;
+}
+.contact-right button:hover { 
+    background:#0c2de9; 
+    color:white; 
+}
+
+footer { 
+    background:#00040c; 
+    color:#aaa; 
+    text-align:center; 
+    padding:20px; }
+footer .footer-logo {
+    display:block;
+    width:48px;
+    height:48px;
+    object-fit:contain;
+    margin:0 auto 12px;
+}
+
+@media(max-width:768px){
+  section {
+     padding:60px 20px; 
+    }
+  .features-grid, .team-grid, #contact { 
+    grid-template-columns:1fr;
+ }
+  nav { 
+        flex-direction:column;
+        align-items:flex-start;
+        gap:8px;
+        padding:12px 20px;
+    }
+    .links {
+        display:flex;
+        flex-wrap:wrap;
+        gap:8px 16px;
+    }
+    .links a {
+        margin-left:0;
+    }
+    .hero-content h1 {
+        font-size:32px;
+    }
+}
+=======
+* { margin:0; 
+    padding:0; 
+    box-sizing:border-box; 
+}
 
 body { 
     font-family: Segoe UI, Arial, sans-serif;
@@ -428,58 +734,4 @@ footer .footer-logo {
         font-size:32px;
     }
 }
-<section class="features" id="features">
-  <h2>3. What ZUT-RT does</h2>
-  <p class="lead">Track every result from submission to release, and get told the moment yours is ready.</p>
 
-  <div class="grid">
-
-    <article class="card feature-main">
-      <div>
-        <div class="icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg>
-        </div>
-        <h3>Live tracking</h3>
-        <p>See the state of every result at a glance, using three simple colours.</p>
-      </div>
-      <div class="status-list" aria-label="Status colour guide">
-        <div class="status done"><span class="dot"></span>Done <small>Green</small></div>
-        <div class="status progress"><span class="dot"></span>In progress <small>Orange</small></div>
-        <div class="status pending"><span class="dot"></span>Pending <small>Grey</small></div>
-      </div>
-    </article>
-
-    <article class="card">
-      <div class="icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg>
-      </div>
-      <h3>Instant alert</h3>
-      <p>Get an SMS and an email as soon as your results are out.</p>
-    </article>
-
-    <article class="card">
-      <div class="icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/></svg>
-      </div>
-      <h3>Student dashboard</h3>
-      <p>View your status and history in one place.</p>
-    </article>
-
-    <article class="card">
-      <div class="icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
-      </div>
-      <h3>Secure access</h3>
-      <p>Role-based login keeps students and staff to what they need.</p>
-    </article>
-
-    <article class="card">
-      <div class="icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>
-      </div>
-      <h3>Progress reports</h3>
-      <p>Admins track each department's progress.</p>
-    </article>
-
-  </div>
-</section>
