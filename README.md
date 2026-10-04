@@ -30,25 +30,4 @@ This landing page demonstrates our understanding of requirements gathering, UN/U
 9. ZUTRT-09 - Responsive UI and accessibility
 10. ZUTRT-10 - Testing, QA and final polish
 all team members are urged to participate
-
-1.ZUTRT-01(Chewe):Navigation and project structure
-
-2.ZUTRT-02 (Olias): Home/Hero section
-
-3.ZUTRT-03 (Alfred): Problem section
-
-4.ZUTRT-04 (Ephraim): Proposed solution/workflow
-
-5.ZUTRT-05 (Kelvin): Features
-
-6.ZUTRT-06 (Moses):  Benefits and objectives
-
-7.ZUTRT-07 (Choolwe): Team section
-
-8.ZUTRT-08 (Tizza): Contact and footer
-
-9.ZUTRT-09 (Suwilo)- Responsive UI and accessibility
-
-10.ZUTRT-10 (Tina) - Testing, QA and final polish
-
-All team members have contributed to this project.
+proposed solution section reviewed.
