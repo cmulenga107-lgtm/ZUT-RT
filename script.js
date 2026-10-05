@@ -33,6 +33,33 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ---------- Offset anchor jumps so the fixed nav doesn't cover headings ---------- */
   const nav = document.querySelector('nav');
+  const menuToggle = document.querySelector('.menu-toggle');
+  const mobileLinks = document.querySelector('.links');
+
+  /* ---------- Mobile navigation ---------- */
+  if (menuToggle && mobileLinks) {
+    menuToggle.addEventListener('click', () => {
+      const open = mobileLinks.classList.toggle('mobile-open');
+      menuToggle.setAttribute('aria-expanded', String(open));
+      menuToggle.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
+    });
+
+    mobileLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileLinks.classList.remove('mobile-open');
+        menuToggle.setAttribute('aria-expanded', 'false');
+        menuToggle.setAttribute('aria-label', 'Open navigation');
+      });
+    });
+
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 768) {
+        mobileLinks.classList.remove('mobile-open');
+        menuToggle.setAttribute('aria-expanded', 'false');
+        menuToggle.setAttribute('aria-label', 'Open navigation');
+      }
+    });
+  }
   const setOffset = () => {
     document.documentElement.style.scrollPaddingTop = (nav ? nav.offsetHeight : 0) + 'px';
   };
