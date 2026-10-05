@@ -363,7 +363,7 @@ nav:hover {
     color:white; 
     text-decoration:none; 
     margin-left:20px; 
-    font-size:30px; 
+    font-size:14px; 
 }
 
 .links a:hover { 
@@ -509,7 +509,7 @@ body {
 .nav a.link {
   color: rgba(255,255,255,.85);
   text-decoration: none;
-  font-size: .95rem;
+  font-size: .10rem;
   font-weight: 500;
   padding: 8px 14px;
   border-radius: 8px;
@@ -741,4 +741,231 @@ footer .footer-logo {
     .hero-content h1 {
         font-size:32px;
     }
+}
+
+
+/* ==========================================================
+   ZUT-RT RESPONSIVE BRAND UPDATE
+   Logo accent: #037FF3 (bright technology blue)
+   ========================================================== */
+:root {
+  --brand-blue: #037ff3;
+  --brand-blue-dark: #0266c5;
+  --brand-blue-light: #eaf5ff;
+  --brand-white: #ffffff;
+}
+
+/* Branded navigation */
+nav {
+  background: var(--brand-blue);
+  min-height: 74px;
+  transition: background-color .25s ease, box-shadow .25s ease, padding .25s ease;
+}
+nav:hover,
+nav.zt-scrolled {
+  background: var(--brand-blue-dark);
+}
+.links {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.links a {
+  margin-left: 0;
+  padding: 9px 12px;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: 600;
+  transition: background-color .2s ease, color .2s ease, transform .2s ease;
+}
+.links a:hover,
+.links a.active {
+  color: var(--brand-blue);
+  background: var(--brand-white);
+  box-shadow: none;
+  transform: translateY(-1px);
+}
+.links a.active {
+  border-bottom: 0;
+}
+
+/* All main action buttons use the logo colour */
+.enter-btn,
+.contact-right button {
+  background: var(--brand-blue);
+  color: var(--brand-white);
+}
+.enter-btn:hover,
+.contact-right button:hover {
+  background: var(--brand-blue-dark);
+  color: var(--brand-white);
+}
+.enter-btn:focus-visible {
+  background: var(--brand-blue-dark);
+  outline: 3px solid rgba(255,255,255,.8);
+  outline-offset: 3px;
+}
+
+/* Branded card accents */
+#problem p,
+#solution p,
+.features-grid div,
+.team-grid div {
+  border-left-color: var(--brand-blue);
+}
+.team-grid a {
+  background: var(--brand-blue);
+}
+.team-grid a:hover {
+  background: var(--brand-blue-dark);
+}
+
+/* Mobile menu button */
+.menu-toggle {
+  display: none;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: 7px;
+  background: transparent;
+  cursor: pointer;
+  padding: 8px;
+}
+.menu-toggle span {
+  display: block;
+  width: 26px;
+  height: 3px;
+  margin: 5px auto;
+  border-radius: 3px;
+  background: var(--brand-white);
+  transition: transform .2s ease, opacity .2s ease;
+}
+
+/* Phones: hide desktop nav links and show a compact menu */
+@media (max-width: 768px) {
+  nav {
+    padding: 12px 16px;
+    min-height: 66px;
+  }
+
+  .logo img {
+    height: 40px;
+    max-width: 140px;
+  }
+
+  .menu-toggle {
+    display: block;
+    margin-left: auto;
+  }
+
+  .links {
+    display: none;
+    position: absolute;
+    top: 66px;
+    left: 0;
+    width: 100%;
+    padding: 10px 16px 16px;
+    background: var(--brand-blue-dark);
+    flex-direction: column;
+    align-items: stretch;
+    gap: 4px;
+    box-shadow: 0 8px 18px rgba(0,0,0,.18);
+  }
+
+  .links.mobile-open {
+    display: flex;
+  }
+
+  .links a {
+    width: 100%;
+    padding: 12px 14px;
+    font-size: 16px;
+  }
+
+  .links a:hover,
+  .links a.active {
+    color: var(--brand-blue-dark);
+    background: var(--brand-white);
+  }
+
+  /* Smaller text and spacing for phone screens */
+  section {
+    padding: 55px 18px;
+  }
+
+  #home {
+    padding-top: 130px;
+    min-height: 100svh;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(28px, 8vw, 40px);
+  }
+
+  .hero-content p {
+    font-size: 17px;
+    line-height: 1.6;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  #problem p,
+  #solution p,
+  .features-grid div p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .features-grid,
+  .team-grid,
+  #contact {
+    grid-template-columns: 1fr;
+  }
+
+  .team-grid {
+    gap: 18px;
+    margin-top: 30px;
+  }
+
+  .team-grid img {
+    height: 210px;
+  }
+
+  #contact {
+    gap: 25px;
+  }
+
+  .contact-right textarea {
+    height: 150px;
+  }
+
+  .contact-right button {
+    width: 100%;
+    float: none;
+    min-height: 46px;
+  }
+}
+
+/* Very small phones */
+@media (max-width: 420px) {
+  nav {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .logo img {
+    height: 36px;
+    max-width: 125px;
+  }
+
+  .hero-content h1 {
+    font-size: 27px;
+  }
+
+  section {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
 }
